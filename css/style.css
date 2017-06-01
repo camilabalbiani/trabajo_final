@@ -1,0 +1,592 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,300i,400|Source+Sans+Pro:900");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,300i,400|Source+Sans+Pro:900");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+footer {
+  background-color: #4D4D4D;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  footer form {
+    font-family: "Lato", sans-serif;
+    color: white; }
+    footer form .form-control {
+      color: white;
+      background-color: #4D4D4D;
+      border: 1px solid white;
+      border-radius: 0;
+      font-style: italic;
+      font-weight: 100px; }
+    footer form button {
+      text-transform: uppercase; }
+    footer form .btn-default {
+      border-color: white;
+      color: #4D4D4D; }
+    footer form .btn {
+      font-weight: 300;
+      border-radius: 0;
+      padding: 6px 20px; }
+    footer form .form-control:focus {
+      border-color: white; }
+  footer .datos {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic; }
+    footer .datos .linea4 {
+      width: 60px;
+      height: 1px;
+      background-color: white;
+      display: inline-block;
+      margin-top: 20px; }
+    footer .datos .correo, footer .datos .fono {
+      margin-top: 20px;
+      color: white;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      font-style: none;
+      margin-bottom: 0; }
+    footer .datos .fono {
+      margin-top: 0; }
+  footer .redes ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    footer .redes ul li {
+      margin-right: 10px;
+      font-size: 25px;
+      margin-top: 10px;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+footer {
+  background-color: #4D4D4D;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  footer form {
+    font-family: "Lato", sans-serif;
+    color: white; }
+    footer form .form-control {
+      color: white;
+      background-color: #4D4D4D;
+      border: 1px solid white;
+      border-radius: 0;
+      font-style: italic;
+      font-weight: 100px; }
+    footer form button {
+      text-transform: uppercase; }
+    footer form .btn-default {
+      border-color: white;
+      color: #4D4D4D; }
+    footer form .btn {
+      font-weight: 300;
+      border-radius: 0;
+      padding: 6px 20px; }
+    footer form .form-control:focus {
+      border-color: white; }
+  footer .datos {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic; }
+    footer .datos .linea4 {
+      width: 60px;
+      height: 1px;
+      background-color: white;
+      display: inline-block;
+      margin-top: 20px; }
+    footer .datos .correo, footer .datos .fono {
+      margin-top: 20px;
+      color: white;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      font-style: none;
+      margin-bottom: 0; }
+    footer .datos .fono {
+      margin-top: 0; }
+  footer .redes ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    footer .redes ul li {
+      margin-right: 10px;
+      font-size: 25px;
+      margin-top: 10px;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center; }
+
+header div nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px; }
+  header div nav ul {
+    display: flex; }
+    header div nav ul li {
+      font-family: "Lato", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      color: black;
+      padding-right: 40px; }
+      header div nav ul li a {
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 10px;
+        color: black; }
+        header div nav ul li a:hover {
+          border-bottom: 1px solid black;
+          text-decoration: none; }
+header .primero {
+  margin-top: 110px;
+  position: relative; }
+  header .primero h4 {
+    font-family: "Lato", sans-serif;
+    font-size: 19px;
+    color: black;
+    font-weight: 400; }
+    header .primero h4:before {
+      height: 1px;
+      background-color: black;
+      width: 280px;
+      display: inline-block;
+      content: '';
+      position: relative;
+      bottom: 5px;
+      right: 20px; }
+  header .primero .color-fondo {
+    position: relative;
+    background-color: #F2F2F2;
+    margin-top: 150px;
+    height: 580px; }
+  header .primero .portada {
+    position: absolute;
+    bottom: -2px;
+    left: 211px;
+    max-width: 1017px; }
+  header .primero .encabezado {
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    bottom: 31%;
+    left: 10%;
+    text-align: center; }
+    header .primero .encabezado h6 {
+      font-weight: 100;
+      font-size: 20px;
+      color: white;
+      margin-bottom: 0;
+      font-family: "Lato", sans-serif; }
+    header .primero .encabezado .linea_blanca {
+      width: 600px;
+      height: 2px;
+      background-color: white;
+      display: inline-block; }
+    header .primero .encabezado h1 {
+      font-size: 45px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: white;
+      margin-top: 10px;
+      font-family: "Source Sans Pro", sans-serif; }
+
+section {
+  width: 60%;
+  margin: auto; }
+  section div {
+    margin-top: 100px;
+    margin-bottom: 100px; }
+    section div h4 {
+      width: 90%;
+      margin: auto;
+      font-family: "Lato", sans-serif;
+      font-size: 24px;
+      color: black;
+      font-weight: 400;
+      margin-bottom: 30px; }
+      section div h4:before {
+        height: 1px;
+        background-color: black;
+        width: 50px;
+        display: inline-block;
+        content: '';
+        position: relative;
+        bottom: 5px;
+        right: 20px; }
+    section div p {
+      font-family: "Lato", sans-serif;
+      font-size: 22px;
+      color: black;
+      font-weight: 300;
+      text-align: center;
+      line-height: 28px; }
+
+.servicios {
+  width: 100%;
+  margin: auto; }
+  .servicios .cajas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F2F2F2;
+    margin-bottom: 0; }
+    .servicios .cajas .cuadrado {
+      max-width: 511px;
+      border: 1px solid #666666;
+      background-color: white;
+      padding: 90px;
+      box-sizing: border-box; }
+      .servicios .cajas .cuadrado:hover {
+        background-color: #666666; }
+        .servicios .cajas .cuadrado:hover h3 {
+          color: white; }
+        .servicios .cajas .cuadrado:hover p {
+          color: white; }
+        .servicios .cajas .cuadrado:hover .linea3 {
+          background-color: white; }
+      .servicios .cajas .cuadrado h3 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 26px;
+        text-transform: uppercase;
+        margin-bottom: 20px; }
+      .servicios .cajas .cuadrado p {
+        font-family: "Lato", sans-serif;
+        font-size: 22px;
+        text-align: left;
+        font-weight: 300; }
+      .servicios .cajas .cuadrado .linea3 {
+        width: 40px;
+        height: 2px;
+        background-color: black;
+        display: inline-block;
+        margin-top: 30px; }
+
+.yellow {
+  padding: 100px 285px;
+  background-color: #F4AD1D;
+  width: 100%; }
+  .yellow div {
+    margin: 0; }
+    .yellow div p {
+      font-family: "Lato", sans-serif;
+      font-weight: 100;
+      font-size: 45px;
+      text-align: left;
+      line-height: 50px; }
+    .yellow div .firma {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-style: italic;
+      margin-top: 20px;
+      font-size: 30px;
+      float: right;
+      margin-right: 96px; }
+      .yellow div .firma:before {
+        height: 1px;
+        background-color: black;
+        width: 100px;
+        display: inline-block;
+        content: '';
+        position: relative;
+        bottom: 9px;
+        right: 15px; }
+
+.Home header {
+  text-align: center;
+  margin: auto;
+  background-image: url(../imagenes/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .Home header div nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px; }
+    .Home header div nav ul {
+      display: flex; }
+      .Home header div nav ul li {
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        color: white;
+        padding-right: 40px; }
+        .Home header div nav ul li a {
+          text-decoration: none;
+          border-bottom: 1px solid transparent;
+          padding-bottom: 10px;
+          color: white; }
+          .Home header div nav ul li a:hover {
+            border-bottom: 1px solid white;
+            text-decoration: none;
+            color: white; }
+  .Home header .encabezado {
+    padding-top: 250px;
+    padding-bottom: 50px; }
+    .Home header .encabezado h6 {
+      font-family: "Lato", sans-serif;
+      color: white;
+      font-weight: 300;
+      font-size: 24px; }
+    .Home header .encabezado .linea_blanca {
+      width: 650px;
+      height: 2px;
+      background-color: white;
+      display: inline-block; }
+    .Home header .encabezado h1 {
+      font-size: 52px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-transform: uppercase;
+      color: white;
+      margin-top: 10px; }
+    .Home header .encabezado .boton {
+      display: inline-block;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      border: 1px solid white;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-transform: uppercase;
+      position: relative;
+      text-decoration: none;
+      color: white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 30px;
+      margin-bottom: 100px; }
+      .Home header .encabezado .boton:after {
+        content: "";
+        height: 153px;
+        width: 1px;
+        display: inline-block;
+        background: #C6C6C5;
+        position: absolute;
+        top: 40px;
+        left: 50%; }
+  .Home header .rectangulo {
+    height: 104px;
+    max-width: 1150px;
+    background-color: white;
+    display: block;
+    position: relative;
+    margin: auto; }
+.Home .introduccion {
+  width: 60%;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 100px; }
+  .Home .introduccion .intro h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
+    font-family: "Lato", sans-serif; }
+    .Home .introduccion .intro h3:before {
+      height: 1px;
+      background-color: black;
+      width: 50px;
+      display: inline-block;
+      content: '';
+      position: relative;
+      bottom: 5px;
+      right: 20px; }
+  .Home .introduccion .intro p {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "Lato", sans-serif;
+    line-height: 28px; }
+.Home .fondo {
+  background-color: #F2F2F2; }
+  .Home .fondo .cajas {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center; }
+    .Home .fondo .cajas .caja {
+      background-color: #4D4D4D;
+      max-width: 511px;
+      padding-top: 80px;
+      width: 50%; }
+      .Home .fondo .cajas .caja:nth-child(2) {
+        background-color: #F07D66; }
+      .Home .fondo .cajas .caja:nth-child(3) {
+        background-color: #F4AD1D; }
+      .Home .fondo .cajas .caja img {
+        margin-left: 123px; }
+      .Home .fondo .cajas .caja .linea2 {
+        width: 95px;
+        height: 1px;
+        background-color: white;
+        display: inline-block;
+        margin-left: 88px;
+        margin-bottom: 20px; }
+      .Home .fondo .cajas .caja h5 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: white;
+        padding-left: 88px;
+        margin-bottom: auto;
+        padding-bottom: 20px;
+        max-width: 420px; }
+      .Home .fondo .cajas .caja p {
+        font-family: "Lato", sans-serif;
+        font-size: 20px;
+        color: white;
+        text-align: left;
+        padding-left: 88px;
+        font-weight: 100;
+        margin-bottom: 40px;
+        max-width: 420px; }
+      .Home .fondo .cajas .caja .botones {
+        display: inline-block;
+        font-family: "Lato",sans-serif;
+        font-weight: 300;
+        border: 1px solid white;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-transform: uppercase;
+        position: relative;
+        text-decoration: none;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 88px;
+        margin-left: 88px; }
+.Home .fondo2 {
+  background-color: #F07D66;
+  padding-top: 90px; }
+  .Home .fondo2 h3 {
+    width: 70%;
+    margin: auto;
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 60px; }
+    .Home .fondo2 h3:before {
+      height: 1px;
+      background-color: white;
+      width: 50px;
+      display: inline-block;
+      content: '';
+      position: relative;
+      bottom: 5px;
+      right: 20px; }
+  .Home .fondo2 .galeria {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center; }
+    .Home .fondo2 .galeria .cajas {
+      display: flex; }
+
+/*# sourceMappingURL=style.css.map */

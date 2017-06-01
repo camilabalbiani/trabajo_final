@@ -1,0 +1,249 @@
+@import "reset";
+@import "fonts";
+@import "footer";
+@import "about";
+
+
+@mixin contenedor($ancho){
+	width: $ancho;
+	margin: auto;
+}
+
+
+.Home {
+	header{
+	text-align: center;
+	margin: auto;
+	background-image: url(../imagenes/fondo2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	div{
+		nav{
+			@include contenedor(80%);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-top: 50px;
+			ul{
+				display: flex;
+				li{
+					font-family: $fuentedos;
+					font-size: 16px;
+					font-weight: 300;
+					color: white;
+					padding-right: 40px;
+					a{
+						text-decoration: none;
+						border-bottom: 1px solid rgba(0,0,0,0);
+						padding-bottom: 10px;
+						color: white;
+						&:hover{
+							border-bottom: 1px solid white;
+							text-decoration: none;
+							color: white;
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	.encabezado{
+		padding-top:250px;
+		padding-bottom:50px;
+		h6{
+			font-family: $fuentedos;
+			color: white;
+			font-weight: 300;
+			font-size: 24px;
+		}
+		.linea_blanca{
+			width: 650px;
+			height: 2px;
+			background-color:white;
+			display: inline-block;
+		}
+		h1{
+			font-size: 52px;
+			font-family: $fuenteuno;
+			text-transform: uppercase;
+			color: white;
+			margin-top: 10px;
+		}
+		.boton{
+			display: inline-block;
+			font-family: $fuentedos;
+			font-weight: 300;
+			border:1px solid white;
+			padding-left: 20px;
+			padding-right: 20px;
+			text-transform: uppercase;
+			position: relative;    
+			text-decoration: none;
+			color: white;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-top: 30px;
+			margin-bottom: 100px;
+			&:after{
+				content: "";
+				height: 153px;
+				width: 1px;
+				display: inline-block;
+				background: #C6C6C5;
+				position: absolute;
+				top: 40px;
+				left: 50%;
+			}
+		}
+		
+
+	}
+	.rectangulo{
+			height: 104px;
+			max-width: 1150px;
+			background-color: white;
+			display: block;
+			position: relative;
+			margin:auto;
+		}
+}
+
+.introduccion{
+	@include contenedor(60%);
+	margin-top:80px;
+	margin-bottom:100px;
+	.intro{
+		h3{
+			font-size: 24px;
+			color: black;
+			font-weight: 400;
+			font-family:$fuentedos;
+			&:before{
+				height: 1px;
+			    background-color:black;
+			    width:50px;
+			    display: inline-block;
+			    content: '';
+			    position: relative;
+			    bottom:5px;
+			    right: 20px;
+			}
+		}
+		p{
+			font-size: 22px;
+			font-weight: 300;
+			text-align: center;
+			padding-top: 40px;
+			font-family:$fuentedos;
+			line-height:28px;
+
+		}
+	}
+}
+.fondo{
+	background-color:#F2F2F2;
+	.cajas{
+		@include contenedor(80%);
+		display: flex;
+		flex-wrap: wrap;
+		margin: auto;
+		justify-content: center;
+		.caja{
+			background-color: #4D4D4D;
+			max-width: 511px;
+			padding-top: 80px;
+			width: 50%;
+			&:nth-child(2){
+				background-color: #F07D66;
+			}
+			&:nth-child(3){
+				background-color: #F4AD1D;
+			}
+			img{
+				margin-left: 123px;
+			}
+			.linea2{
+				width: 95px;
+				height: 1px;
+				background-color:white;
+				display: inline-block;
+				margin-left: 88px;
+				margin-bottom: 20px;
+
+			}
+			h5{
+				font-family: $fuenteuno;
+				font-size: 24px;
+				text-transform: uppercase;
+				color: white;
+				padding-left: 88px;
+				margin-bottom: auto;
+				padding-bottom: 20px;
+				max-width: 420px;
+			}
+			p{
+				font-family: $fuentedos;
+				font-size: 20px;
+				color: white;
+				text-align: left;
+				padding-left: 88px;
+				font-weight: 100;
+				margin-bottom: 40px;
+				max-width: 420px;
+			}
+			.botones {
+				display: inline-block;
+				font-family: "Lato",sans-serif;
+				font-weight: 300;
+				border:1px solid white;
+				padding-left: 20px;
+				padding-right: 20px;
+				text-transform: uppercase;
+				position: relative;    
+				text-decoration: none;
+				color: white;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				margin-bottom: 88px;
+				margin-left: 88px;
+			}
+		}
+	}
+
+}
+.fondo2{
+
+	background-color: #F07D66;
+	padding-top: 90px;
+	h3{
+		@include contenedor(70%);
+		font-size: 24px;
+		color: white;
+		font-weight: 400;
+		font-family:$fuentedos;
+		margin-bottom: 60px;
+		&:before{
+			height: 1px;
+			background-color:white;
+			width:50px;
+			display: inline-block;
+			content: '';
+			position: relative;
+			bottom:5px;
+			right: 20px;
+		}
+	}
+	.galeria{
+	@include contenedor(80%);
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: center;
+		.cajas{
+			display: flex;
+		}
+	}
+	
+}
+}

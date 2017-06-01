@@ -1,0 +1,87 @@
+footer{
+	background-color:#4D4D4D;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	form{
+		font-family: $fuentedos;
+		color: white;
+		.form-control{
+			color: white;
+			background-color: #4D4D4D;
+			border: 1px solid white;
+			border-radius: 0;
+			font-style: italic;
+			font-weight: 100px;
+		}
+		button{
+			text-transform: uppercase;
+		}
+		.btn-default{
+			border-color:white;
+			color:#4D4D4D;
+		}
+		.btn{
+			font-weight: 300;
+			border-radius:0;
+			padding: 6px 20px;
+		}
+		.form-control:focus{
+			border-color:white;
+		}
+
+	}
+	.datos{
+		
+		color: white;
+		font-family: $fuentedos;
+		font-weight: 100;
+		font-size: 15px;
+		font-style: italic;
+		.linea4{
+			width: 60px;
+			height: 1px;
+			background-color:white;
+			display: inline-block;
+			margin-top: 20px;
+
+		}
+		.correo, .fono{
+			margin-top: 20px;
+			color: white;
+			font-family: $fuentedos;
+			font-weight: 300;
+			font-size: 15px;
+			font-style: none;
+			margin-bottom:0;
+
+		}
+		.fono{
+			margin-top: 0;
+		}
+
+
+	}
+	.redes{
+		ul{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+
+			li{
+				margin-right: 10px;
+				font-size: 25px;
+				margin-top: 10px;
+				border: 1px solid white;
+				border-radius:50%;
+				width: 40px;
+     			height: 40px;
+     			text-align: center;
+
+				
+
+
+			}
+		}
+	}
+
+}
